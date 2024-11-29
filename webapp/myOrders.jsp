@@ -1,7 +1,12 @@
+<%@page import="project.ConnectionProvider"%>
+<%@page import="java.sql.*"%>
+<%@include file="header.jsp" %>
+<%@include file="footer.jsp"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 <title>Home</title>
 </head>
 <body>
@@ -12,9 +17,9 @@
             <th scope="col">S.No</th>
             <th scope="col">Product Name</th>
             <th scope="col">category</th>
-            <th scope="col"><i class="fa fa-inr"></i>  Price</th>
+            <th scope="col"><i class="fa fa-dollar-sign"></i>  Price</th>
             <th scope="col">Quantity</th>
-            <th scope="col"><i class="fa fa-inr"></i> Sub Total</th>
+            <th scope="col"><i class="fa fa-dollar-sign"></i> Sub Total</th>
             <th scope="col">Order Date</th>
              <th scope="col">Expected Delivery Date</th>
              <th scope="col">Payment Method</th>
@@ -23,20 +28,34 @@
           </tr>
         </thead>
         <tbody>
-
+<%
+int sno=0;
+try{
+	Connection con=ConnectionProvider.getCon();
+	Statement st=con.createStatement();
+	ResultSet rs=st.executeQuery("select *from cart inner join product where cart.product_id=product.id and cart.email='"+email+"' and cart.orderDate is not NULL");
+	while(rs.next()){
+		sno=sno+1;
+		
+%>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><i class="fa fa-inr"></i> </td>
-            <td></td>
-            <td><i class="fa fa-inr"></i> </td>
-             <td></td>
-              <td></td>
-               <td></td>
-               <td></td>
+            <td><%out.println(sno); %></td>
+            <td><%=rs.getString(17) %></td>
+            <td><%=rs.getString(18) %></td>
+            <td><%=rs.getString(19) %> <i class="fa fa-dollar-sign"></i> </td>
+            <td><%=rs.getString(3) %></td>
+            <td><%=rs.getString(5) %> <i class="fa fa-dollar-sign"></i> </td>
+             <td><%=rs.getString(11) %></td>
+              <td><%=rs.getString(12) %></td>
+               <td><%=rs.getString(13) %></td>
+               <td><%=rs.getString(15) %></td>
             </tr>
-         
+         <%
+			}
+			}catch(Exception e){
+				System.out.println(e);
+			}
+         %>
         </tbody>
       </table>
       <br>
