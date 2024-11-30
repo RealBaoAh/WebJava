@@ -5,31 +5,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 <title>About</title>
 </head>
 <body>
 <div style="color: white; text-align: center; font-size: 30px;">About <i class="fa fa-address-book"></i></div>
 <div style="background-color: white; padding:35px; font-size: 30px;">
-BTech Days
+Electro
 <br>
-Hey everyone!!
+
+Welcome to Electro, your ideal destination for all your electronic device needs!
+Here, we offer a wide range of high-quality products, from smartphones and laptops to the latest electronic devices.
 <br>
-I make free programming tutorials for beginners.
-& PROJECT videos with source code.
-That include Java for beginners,c# (Dot net tutorial), JFrame,JDBC,Jsp,etc
+With trusted brands and competitive prices, you'll easily find products that suit your needs and budget.
+Experience fast, secure, and convenient online shopping at Electro, where customer satisfaction and quality are our top priorities.
 <br>
-We make videos of :-
-DBMS
-COMPUTER NETWORKING 
-BPM
-OS, etc
-So kindly subscribe our channel.
-<br>
-Contact us at :- btechdays.care@gmail.com
-<br>
-or
-<br>
-contact us at instagram :- btechdays
+
 </div>
 
 </body>
