@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANH SÁCH SẢN PHẨM</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: "Open Sans", serif;
+            font-size: 14px;
+            color: #111;
+            line-height: 1.15;
+        }
+        #wrapper {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h3{
+            font-size: 18px;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul.products li .product-top{
+            position: relative;
+            overflow: hidden;
+        }
+        ul.products li .product-top .product-thumb{
+            display: block;
+        }
+        ul.products li:hover .product-top .product-thumb img{
+            filter: opacity(80%);
+        }
+        ul.products li .product-top .product-thumb img{
+            display: block;
+        }
+        ul.products li .product-top a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color: #fff;
+            padding: 10px 0px;
+            position: absolute;
+            bottom: -36px;
+            width: 100%;
+            transition: 0.25s ease-in-out;
+            opacity: 0.85;
+        }
+        ul.products li:hover a.buy-now{
+            bottom: 0px;
+        }
+        ul.products li .product-infor{
+            padding: 10px 0px;
+        }
+        ul.products li .product-infor a{
+            display:block;
+            text-decoration: none;
+        }
+        ul.products li .product-infor a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding: 3px 0px;
+        }
+        ul.products li .product-infor a.product-name{
+            color: #334862;
+            padding: 3px 0px;
+        }
+        ul.products li .product-infor .product-price{
+            color: #111;
+            padding: 2px 0px;
+            font-weight: 600;
+        }
+    </style>
+    <div id="wrapper">
+        <div class="headline">
+            <h3>Danh Sách Sản Phẩm</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top"></div>
+                    <a href="" class="product-thumb">
+                        <img src="images/post-01_b9d8419475fa4003a817d23cbe0686ad_grande.webp" alt="">
+                    </a>
+                    <a href="" class="buynow">Mua Ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">PC Gaming</a>
+                    <a href="PC GVN G-STUDIO Intel i9-14900K/ VGA RTX 4070 Ti Super (Powered by ASUS)" class="product-name"></a>
+                    <div class="product-price">69.990.000VND</div>
+                </div>    
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top"></div>
+                    <a href="" class="product-thumb">
+                        <img src="images/post-02_cdc48a8e67644ce18e1311819330b3ea_1024x1024.webp" alt="">
+                    </a>
+                    <a href="" class="buynow">Mua Ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">PC Gaming</a>
+                    <a href="PC GVN G-STUDIO Intel i7-14900K/ VGA RTX 3070 Ti Super (Powered by ASUS)" class="product-name"></a>
+                    <div class="product-price">49.990.000VND</div>
+                </div>    
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top"></div>
+                    <a href="" class="product-thumb">
+                        <img src="images/post-03_4fb6624d3fa942109c44df05c36c08c8_1024x1024.webp" alt="">
+                    </a>
+                    <a href="" class="buynow">Mua Ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">PC Gaming</a>
+                    <a href="PC GVN G-STUDIO Intel i5-14900K/ VGA RTX 3070 Ti Super (Powered by ASUS)" class="product-name"></a>
+                    <div class="product-price">39.990.000VND</div>
+                </div>    
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top"></div>
+                    <a href="" class="product-thumb">
+                        <img src="images/post-03_57a569bef5b8498f9d758ac51794ac2e_1024x1024.jpg" alt="">
+                    </a>
+                    <a href="" class="buynow">Mua Ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">PC Gaming</a>
+                    <a href="PC GVN G-STUDIO Intel i5-13900K/ VGA RTX 3070 Ti Super (Powered by ASUS)" class="product-name"></a>
+                    <div class="product-price">29.990.000VND</div>
+                </div>    
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top"></div>
+                    <a href="" class="product-thumb">
+                        <img src="images/post-03_5f342d16dc6e4438b9018fd0c0d2df1a_1024x1024.jpg" alt="">
+                    </a>
+                    <a href="" class="buynow">Mua Ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">PC Gaming</a>
+                    <a href="PC GVN G-STUDIO Intel i3-14900K/ VGA RTX 2060 Ti Super (Powered by ASUS)" class="product-name"></a>
+                    <div class="product-price">22.990.000VND</div>
+                </div>    
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top"></div>
+                    <a href="" class="product-thumb">
+                        <img src="images/post-15_82e2a5c014c3481ea73077612d026b52_1024x1024.webp" alt="">
+                    </a>
+                    <a href="" class="buynow">Mua Ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">PC Gaming</a>
+                    <a href="PC GVN G-STUDIO Intel i3-11900K/ VGA RTX 2070 Ti Super (Powered by ASUS)" class="product-name"></a>
+                    <div class="product-price">19.990.000VND</div>
+                </div>    
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top"></div>
+                    <a href="" class="product-thumb">
+                        <img src="images/post-20_184b8cbb8b4e41469f4b13bcee34a373_1024x1024.webp" alt="">
+                    </a>
+                    <a href="" class="buynow">Mua Ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">PC Gaming</a>
+                    <a href="PC GVN G-STUDIO Intel i3-14900K/ VGA RTX 2040 Ti Super (Powered by ASUS)" class="product-name"></a>
+                    <div class="product-price">15.990.000VND</div>
+                </div>    
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top"></div>
+                    <a href="" class="product-thumb">
+                        <img src="images/post-32_bdddf19c226e4c27a3403faa69817a8a_1024x1024.webp" alt="">
+                    </a>
+                    <a href="" class="buynow">Mua Ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">PC Gaming</a>
+                    <a href="PC GVN G-STUDIO Intel i3-11900K/ VGA RTX 2030 Ti Super (Powered by ASUS)" class="product-name"></a>
+                    <div class="product-price">12.990.000VND</div>
+                </div>    
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
